@@ -1,5 +1,7 @@
 # .Flac-player-
-<h2<About Project</h2>
+
+## About Project
+
 <p>The purpose of this project is to create .flac extension player which allows us to listen to music via headphones with jack or wireless using bluetooth.</p>
 
 Files contains kicad_scheme
