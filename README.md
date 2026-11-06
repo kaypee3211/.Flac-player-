@@ -12,9 +12,9 @@ PCM5102A DAC 3.3v
 
 
 
-References & Datasheets:
+References & Datasheets:<br><br>
 <img width="485" height="258" alt="image" float="left" src="https://github.com/user-attachments/assets/652b1610-b7c0-4346-b087-e8cdfa0efc2b" />
 <br>
 
-https://stm32-base.org/assets/pdf/regulators/ME6211.pdf
+https://stm32-base.org/assets/pdf/regulators/ME6211.pdf<br>
 https://electronics.stackexchange.com/questions/232935/why-is-there-always-a-capacitor-on-input-and-output-of-a-voltage-regulator
