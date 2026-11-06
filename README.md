@@ -1,14 +1,16 @@
 # .Flac-player-
 pcb scheme
 
-Hardware Requirements:
-4 capacitor 10uf
-2 stabilizator me6211a sot-89
-esp32 ch340
-ips ST7789 3.3V
-PCM5102A DAC 3.3v
-3 push buttons
-
+Hardware Requirements:<br>
+<ol>
+  <li>4 capacitor 10uf</li>
+  <li>2 stabilizator me6211a sot-89</li>
+  <li>esp32 ch340</li>
+  <li>ips ST7789 3.3V</li>
+  <li>PCM5102A DAC 3.3v</li>
+  <li>3 push buttons</li>
+</ol>
+<br>
 
 
 
