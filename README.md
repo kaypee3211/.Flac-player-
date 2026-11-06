@@ -6,7 +6,7 @@
 
 Files contains kicad_scheme
 
-###Hardware Requirements:<br>
+##Hardware Requirements:<br>
 <ol>
   <li>4 capacitor 10uf</li>
   <li>2 stabilizator me6211a sot-89</li>
@@ -19,7 +19,7 @@ Files contains kicad_scheme
 
 
 
-###References & Datasheets:<br><br>
+##References & Datasheets:<br><br>
 <img width="485" height="258" alt="image" float="left" src="https://github.com/user-attachments/assets/652b1610-b7c0-4346-b087-e8cdfa0efc2b" />
 <br>
 
