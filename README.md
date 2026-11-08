@@ -25,3 +25,26 @@ Files contains kicad_scheme
 
 https://stm32-base.org/assets/pdf/regulators/ME6211.pdf<br>
 https://electronics.stackexchange.com/questions/232935/why-is-there-always-a-capacitor-on-input-and-output-of-a-voltage-regulator
+
+
+
+ przcyciski:
+ 1 - przesuwa pomiedzy opcjami w menu, klikasz raz to przewijasz na nastepna opcjce itp gdy przytrzymasz to wchodzisz w jeden z 3 trybow: muzyka, todolist, ekran jako dodatek na biurko
+ 2 - tryb uspienia 
+ muzyka:
+ 1 - kliknij - zaczniaj grac muzyka, przytrzymaj wyjdz z tego trybu
+ 2 - podglosnij
+ 3 - scisz
+ 
+ to do list:
+ 1 - klinknij - zejdz na dol, przytrzymaj wyjdz z tego trybu
+ 2 - kliknij skresl ze zrobione
+ 
+ 
+ekran jako dodatek:
+1 - kliknij - wlacz jakas animacje losowa z 3,przytrzymaj cofnij
+2 - kliknij - stoper ustawiony na 30 minut i leci muzyka w tle jakas cozy, przytrzymaj - zresetuj czas
+3- - klik odliczanie iel minut do nastepnych korepetycji
+
+
+
