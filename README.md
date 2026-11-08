@@ -10,10 +10,12 @@ Files contains kicad_scheme
 <ol>
   <li>4 capacitor 10uf</li>
   <li>2 stabilizator me6211a sot-89</li>
-  <li>esp32 ch340</li>
-  <li>ips ST7789 3.3V</li>
-  <li>PCM5102A DAC 3.3v</li>
+  <li>1 esp32 ch340</li>
+  <li>2.4inch LCD Module - Moduł z kolorowym wyświetlaczem LCD</li>
+  <li>1 PCM5102A DAC 3.3v</li>
   <li>3 push buttons</li>
+  <li>1 tp4056</li>
+  <li>Akumulator 3,7V 4000mAh LiPo 805080 (2539)</li>
 </ol>
 <br>
 
