@@ -20,31 +20,103 @@ Button btn3(14);
 
 
 
+//menu - choice 1
+void musicPlaying(){
+  
+  int flag = 0;
+  while (flag == 0)
+ {
+  btn1.read();
+  btn2.read();
+  btn3.read();
+  if (btn1.pressedFor(1000)) { //not working
+    flag = 1;
+  }
+  u8g2.firstPage();
+  do {
+    u8g2.setFont(u8g2_font_ncenB08_tf);
+    u8g2.drawStr(0,50,"MUSIC...");
+    u8g2.drawLine(0,0,0,100);
+  } while(u8g2.nextPage());
+  
+ }
+ 
+}
+
 static void music() {
+  int flag = 0;
+  
   int navMusic = 0;
   u8g2.firstPage();
+  while (flag == 0) {
+    btn1.read();
+    btn2.read();
+    btn3.read();
+    
+    if (btn1.wasPressed()){
+      Serial.println("music playing");
+      musicPlaying();
+
+    }
+    if (btn2.wasPressed()){
+      Serial.println("Vol up");
+    }
+    if (btn3.wasPressed()){
+      Serial.println("Vol down");
+    }
+    if (btn3.pressedFor(1000)) {
+    flag = 1;
+    menu();
+  }
   do {
     u8g2.setFont(u8g2_font_ncenB08_tf);
     u8g2.drawStr(0,15,"1-Play music");
     u8g2.drawStr(0,30,"2-Vol up");
     u8g2.drawStr(0,45,"3-Vol down");
-    if (btn1.isPressed()){
-      Serial.println("music playing");
-    }
-    if (btn2.isPressed()){
-      Serial.println("Vol up");
-    }
-    if (btn3.isPressed()){
-      Serial.println("Vol down");
-    }
-
   } while (u8g2.nextPage());
+ 
+  }
+  
 }
+
+
+//menu - choice 2
+
+void todolist() {
+  
+  int flag  = 0;
+  int navTodolist = 0;
+  u8g2.firstPage();
+  while (flag == 0) {
+  btn1.read();
+  btn2.read();
+  btn3.read();
+    do {
+      u8g2.setFont(u8g2_font_ncenB08_tf);
+      u8g2.drawStr(0,15,"task 1");
+      u8g2.drawStr(0,30,"task 2");
+      u8g2.drawStr(0,45,"task 3");
+      if (btn1.wasPressed()) {
+        navTodolist++;
+      }
+      else if (btn2.wasPressed()) {
+        navTodolist--;
+      }
+      u8g2.drawLine(0,navTodolist*20,100,navTodolist*20);
+      Serial.println("navtodolist");
+      Serial.println(navTodolist);
+    } while (u8g2.nextPage());
+  }
+    
+  }
+
 
 static void handleClick() {
   Serial.println("Clicked!");
 }
 
+
+ 
 static void menu() {
     u8g2.firstPage();
     do {
@@ -55,20 +127,20 @@ static void menu() {
       u8g2.drawStr(0,40,"todolist");
       u8g2.drawStr(0,60,"korki");
       u8g2.drawStr(0,80,"lofi");
-      if (btn1.isPressed()){
+      if (btn1.wasPressed()){
         nav++;
       }
-      if (btn2.isPressed()){
+      if (btn2.wasPressed()){
         nav--;
       }
-      if (btn3.isPressed()){
+      if (btn3.wasPressed()){
         currentMenu=nav;
         switch(nav) {
           case 1:
             music();
             break;
           case 2:
-            // todolist();
+            todolist();
             break;
           case 3:
             // timer();
@@ -98,15 +170,7 @@ void loop() {
   btn1.read();
   btn2.read();
   btn3.read();
-  if (currentMenu == 0) {
-    menu();
-  }
-  if (currentMenu == 1) {
-    music();
-  }
+  menu();
 
 
 }
-
-
-
